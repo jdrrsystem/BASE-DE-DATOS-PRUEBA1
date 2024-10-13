@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atención al Ciudadano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h1>Atención al Ciudadano</h1>
+        <div id="register">
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <input type="email" id="registerEmail" placeholder="Correo electrónico" required>
+                <input type="password" id="registerPassword" placeholder="Contraseña" required>
+                <select id="registerDepartment">
+                    <option value="Secretaría de Juventud">Secretaría de Juventud</option>
+                    <option value="Secretaría de Salud">Secretaría de Salud</option>
+                </select>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <div id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Correo electrónico" required>
+                <input type="password" id="loginPassword" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="dashboard" style="display:none;">
+        <h1>Bienvenido</h1>
+        <p>Has iniciado sesión correctamente.</p>
+        <h2>Gestión de Inventario</h2>
+        <form id="inventoryForm">
+            <input type="text" id="item" placeholder="Producto" required>
+            <input type="text" id="assignedTo" placeholder="Asignar a" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <ul id="inventoryList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
